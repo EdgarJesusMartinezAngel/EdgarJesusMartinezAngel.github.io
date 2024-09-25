@@ -18,7 +18,7 @@ function iniciarJuego(){
 
     let botonPiedra = document.getElementById('boton_piedra')
     botonPieda.addEventListener('click',ataquePieda)
-    let botonPepel = document.getElementById('boton_papel')
+    let botonPapel = document.getElementById('boton_papel')
     botonPepel.addEventListener('click',ataquePepel)
     let botonTijera = document.getElementById('boton_tijera')
     botonTijera.addEventListener('click',ataqueTijera)
@@ -73,8 +73,8 @@ function ataquePiedra(){
     ataqueAleatorioEnemigo()
 
 }
-function ataquePepel(){
-    ataqueJugador = 'Pepel'
+function ataquePapel(){
+    ataqueJugador = 'Papel'
     ataqueAleatorioEnemigo()
 
 }
@@ -88,7 +88,7 @@ function ataqueAleatorioEnemigo(){
     if(ataqueAletorio ==1){
         ataqueEnemigo = 'Piedra'
     }else if(ataqueAletorio ==2){
-        ataqueEnemigo = 'Pepel'
+        ataqueEnemigo = 'Papel'
     }else{
         ataqueEnemigo = 'Tijera'
     }
@@ -106,11 +106,11 @@ function combate(){
         crearMensajes("GANASTE")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
-    }else if(ataqueJugador=='Pepel'&&ataqueEnemigo=='Piedra'){
+    }else if(ataqueJugador=='Papel'&&ataqueEnemigo=='Piedra'){
         crearMensajes("GANASTE")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
-    }else if(ataqueJugador=='Tijera'&&ataqueEnemigo=='Pepel'){
+    }else if(ataqueJugador=='Tijera'&&ataqueEnemigo=='Papel'){
         crearMensajes("GANASTE")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
@@ -164,7 +164,7 @@ function mensajesFinal(resultadoFinal){
     //Deshabilita los botones
     let botonPiedra = document.getElementById('boton_piedra')
     botonPieda.disabled =true
-    let botonPepel = document.getElementById('boton_papel')
+    let botonPapel = document.getElementById('boton_papel')
     botonPepel.disabled = true
     let botonTijera = document.getElementById('boton_tijera')
     botonTijera.disabled =true
