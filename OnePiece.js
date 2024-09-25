@@ -69,7 +69,7 @@ function seleccionarPersonajeEnemigo(){
 }
 //Esta atento al llamado de cual ataque selecciono el jugador
 function ataquePieda(){
-    ataqueJugador = 'Pieda'
+    ataqueJugador = 'Piedra'
     ataqueAleatorioEnemigo()
 
 }
@@ -102,11 +102,11 @@ function combate(){
     //Logica
     if(ataqueEnemigo==ataqueJugador){
         crearMensajes("EMPATE")
-    }else if(ataqueJugador=='Pieda'&&ataqueEnemigo=='Tijera'){
+    }else if(ataqueJugador=='Piedra'&&ataqueEnemigo=='Tijera'){
         crearMensajes("GANASTE")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
-    }else if(ataqueJugador=='Pepel'&&ataqueEnemigo=='Pieda'){
+    }else if(ataqueJugador=='Pepel'&&ataqueEnemigo=='Piedra'){
         crearMensajes("GANASTE")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
