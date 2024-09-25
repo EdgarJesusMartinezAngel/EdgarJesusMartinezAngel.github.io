@@ -17,9 +17,9 @@ function iniciarJuego(){
     botonPersonaje.addEventListener('click',seleccionarPersonajeJugador)
 
     let botonPiedra = document.getElementById('boton_piedra')
-    botonPieda.addEventListener('click',ataquePiedra)
+    botonPiedra.addEventListener('click',ataquePiedra)
     let botonPapel = document.getElementById('boton_papel')
-    botonPepel.addEventListener('click',ataquePapel)
+    botonPapel.addEventListener('click',ataquePapel)
     let botonTijera = document.getElementById('boton_tijera')
     botonTijera.addEventListener('click',ataqueTijera)
 
