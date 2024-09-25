@@ -86,7 +86,7 @@ function ataqueAleatorioEnemigo(){
     let ataqueAletorio = aleatorio(1,3)
 
     if(ataqueAletorio ==1){
-        ataqueEnemigo = 'Pieda'
+        ataqueEnemigo = 'Piedra'
     }else if(ataqueAletorio ==2){
         ataqueEnemigo = 'Pepel'
     }else{
