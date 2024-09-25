@@ -163,9 +163,9 @@ function mensajesFinal(resultadoFinal){
 
     //Deshabilita los botones
     let botonPiedra = document.getElementById('boton_piedra')
-    botonPieda.disabled =true
+    botonPiedra.disabled =true
     let botonPapel = document.getElementById('boton_papel')
-    botonPepel.disabled = true
+    botonPapel.disabled = true
     let botonTijera = document.getElementById('boton_tijera')
     botonTijera.disabled =true
     //Mostrar boton reiniciar
