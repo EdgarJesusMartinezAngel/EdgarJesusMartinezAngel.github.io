@@ -16,7 +16,7 @@ function iniciarJuego(){
     let botonPersonaje = document.getElementById('boton-personaje')
     botonPersonaje.addEventListener('click',seleccionarPersonajeJugador)
 
-    let botonPieda = document.getElementById('boton_pieda')
+    let botonPiedra = document.getElementById('boton_piedra')
     botonPieda.addEventListener('click',ataquePieda)
     let botonPepel = document.getElementById('boton_papel')
     botonPepel.addEventListener('click',ataquePepel)
@@ -68,7 +68,7 @@ function seleccionarPersonajeEnemigo(){
     }
 }
 //Esta atento al llamado de cual ataque selecciono el jugador
-function ataquePieda(){
+function ataquePiedra(){
     ataqueJugador = 'Piedra'
     ataqueAleatorioEnemigo()
 
@@ -162,7 +162,7 @@ function mensajesFinal(resultadoFinal){
     sectionMensajes.innerHTML = resultadoFinal
 
     //Deshabilita los botones
-    let botonPieda = document.getElementById('boton_pieda')
+    let botonPiedra = document.getElementById('boton_piedra')
     botonPieda.disabled =true
     let botonPepel = document.getElementById('boton_papel')
     botonPepel.disabled = true
